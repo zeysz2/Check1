@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ind">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio SQL - Ridha Miftahul Falah</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <div class="sql-header">
+                <div class="nav">
+                        <nav class="navbar">
+                            <ul>
+                              <li><a class="nvb" href="index.html#Portfolios">Portfolio</a></li>  
+                              <li><a class="nvb" href="index.html#skills">Skills</a></li>
+                              <li><a class="nvb" href="index.html#contact">Contact</a></li>
+                              <li>
+                                <a href="CV - Ridha Miftahul Falah.pdf" target="_blank">
+                                    <button class="cv-btn">Curriculum Vitae</button>
+                                </a>
+                              </li>  
+                            </ul>
+                        </nav>
+                        <div class="burger">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                        </div>
+                </div>
+                <div class="nav-sql">
+                    <div class="logo-sql">                
+                        <a href="index.html">Ridha Miftahul Falah</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio SQL -->
+                <section id="text">
+                <div class="port-text">
+                    <h3 class="pre-title">My Portfolio</h3>
+                    <h1 class="name-char">Structured Query Language (SQL)</h1>
+                    <p>
+                        SQL merupakan singkatan dari Structured Query Language. Ini adalah bahasa pemrograman yang digunakan untuk mengakses dan mengelola basis data relasional. 
+                        SQL digunakan untuk melakukan berbagai operasi pada basis data, termasuk pengambilan (query), penambahan (insert), pembaruan (update), penghapusan (delete), 
+                        dan manipulasi struktur basis data (seperti membuat tabel, mengubah tabel, dan membuat indeks).
+                        SQL adalah standar industri yang digunakan oleh sebagian besar sistem manajemen basis data relasional (RDBMS), termasuk MySQL, PostgreSQL, Oracle Database, 
+                        Microsoft SQL Server, dan banyak lainnya.Dengan menggunakan SQL, pengguna dapat dengan mudah berinteraksi dengan basis data, mengekstrak informasi yang diperlukan, 
+                        dan melakukan berbagai operasi yang diperlukan untuk pengembangan dan pemeliharaan aplikasi yang menggunakan basis data relasional. SQL memiliki sintaksis yang terstruktur 
+                        dengan baik, yang membuatnya relatif mudah dipahami dan dipelajari oleh pengembang perangkat lunak maupun analis data.
+                    </p>
+                    &nbsp;
+                    <p>
+                        Kali ini saya akan memberikan penjelasan terhadap project SQL saya yang didapat dari BootCamp MySkill. Pada project ini, saya menggunakan dataset dari
+                        Tokopedia (Bukan data sesungguhnya / Dummy). Berikut penjelasan mengenai table dari dataset yang digunakan, sebagai berikut:
+                    </p>
+                </div>
+                <div class="port-text">
+                    <div class="gambar">
+                    <img src="./Images/dataset.png" alt="Dataset">
+                    <p>1. Dataset Detail</p>
+                    </div>
+                    <p><b>Data Processing</b></p>
+                    <p class="text-par">Pengolahan data dilakukan dengan menggunakan aplikasi PgAdmin4 yang terintegrasi dengan PostgreSQL.
+                        Tidak lupa untuk mengimport Dataset tersebut kedalam aplikasi PgAdmin4 dengan memberikan nama Database dengan nama FinalProject.
+                        Sebelum mengolah data menggunakan SQL kita harus melakukan pengecekan pada masing-masing table apakah data yang di import sudah 
+                        berhasil ter-import dengan baik dan dapat di eksekusi, sebagai berikut:
+                    </p>
+                    <div class="gambar">
+                    <img src="./Images/sql-1.png" alt="SQL 1">
+                    <p>2. Query Select Table</p>
+                    </div>
+                    <div class="port-text">
+                    <p>
+                        Untuk hasil query tersebut muncul masing-masing table yang sudah di query, sebagai berikut:
+                    </p>
+                    </div>
+                    <div class="gambar">
+                    <img src="./Images/hasil-1.png" alt="Hasil 1">
+                    <p>3. Data Table order_detail</p>
+                    </div>
+                    
+                    <div class="gambar">
+                    <img src="./Images/hasil-2.png" alt="Hasil 2">
+                    <p>4. Data Table sku_detail</p>
+                    </div>
+                    
+                    <div class="gambar">
+                    <img src="./Images/hasil-3.png" alt="Hasil 3">
+                    <p>5. Data Table customer_detail</p>
+                    </div>
+                    
+                    <div class="gambar">
+                    <img src="./Images/hasil-4.png" alt="Hasil 4">
+                    <p>6. Data Table payment_detail</p>
+                    </div>
+                </div>
+                <!-- No 1 -->
+                <div class="port-text">
+                    <p>Data yang diimport telah berhasil di eksekusi untuk menampilkan data pada setiap table dari dataset ini. Oke, dengan 
+                        itu mari kita menuju kepembahasan selanjutnya.
+                    </p>
+                    <br>
+                    <p><b>
+                        Questions & Answer
+                    </b></p>
+                    <p><b>Nomor 1</b></p>
+                       <p> Q: Selama transaksi yang terjadi selama 2021, pada bulan apa total nilai transaksi
+                        (after_discount) paling besar? Gunakan is_valid = 1 untuk memfilter data transaksi.
+                    </p>
+                    <p>Source table: order_detail</p>
+
+                    <div class="gambar">
+                    <img src="./Images/Query/query-1.png" alt="Query 1">
+                    <p>7. Query Nomor 1</p>
+                    </div>
+
+                    <div class="gambar">
+                    <img src="./Images/Hasil/hasil-query1.png" alt="HQue 1">
+                    <p>8. Hasil Query Nomor 1</p>
+                    </div>
+
+                    <p class="text-par">Dari table diatas terlihat bahwa nilai transaksi (after_discount) paling besar selama tahun 2021
+                        terdapat pada bulan agustus, dengan total transaksinya sebesar 227.862.744. Dalam query tersebut menggunakan
+                        extract untuk memfilter tahun berdasarkan tahun 2021 dan to_char untuk menampilkan nama bulannya. Kemudian
+                        di Group by dengan bulan dan Order By total transaksinya, dengan pengurutan data dari besar ke paling rendah. Karena ingin
+                        menampilkan nilai total_transaksi yang paling besar saja saya batasi dengan limit 1.
+                    </p>
+                </div>
+                <!-- No 2 -->
+                <div class="port-text">
+                    <p><b>Nomor 2</b></p>
+                    <p>Q: Selama transaksi pada tahun 2022, kategori apa yang menghasilkan nilai transaksi paling
+                    besar? Gunakan is_valid = 1 untuk memfilter data transaksi.
+                    </p>
+                    <p>Source table: order_detail, sku_detail</p>
+
+                    <div class="gambar">
+                    <img src="./Images/Query/query-2.png" alt="Query 2">
+                    <p>9. Query Nomor 2</p>
+                    </div>
+
+                    <div class="gambar">
+                    <img src="./Images/Hasil/hasil-query2.png" alt="HQue 2">
+                    <p>10. Hasil Query Nomor 2</p>
+                    </div>
+
+                    <p class="text-par">Dari table diatas terlihat bahwa selama transaksi pada tahun 2022, kategori yang menghasilkan nilai transaksi
+                        paling besar adalah kategori Mobiles & Tablets dengan total transaksinya sebesar 918.451.576. Query diatas 
+                        menggunakan JOIN untuk menggabungkan 2 table, diantaranya table order_detail dan sku_detail. Group by dengan 
+                        Kategori Barang dan Order By total transaksi dengan pengurutan data dari besar ke paling rendah.
+                    </p>
+                </div>
+                <!-- No 3 -->
+                <div class="port-text">
+                    <p><b>Nomor 3</b></p>
+                    <p class="text">Q: Bandingkan nilai transaksi dari masing-masing kategori pada tahun 2021 dengan 2022.
+                    Sebutkan kategori apa saja yang mengalami peningkatan dan kategori apa yang mengalami
+                    penurunan nilai transaksi dari tahun 2021 ke 2022. Gunakan is_valid = 1 untuk memfilter data
+                    transaksi.
+                    </p>
+                    <p>Source table: order_detail, sku_detail</p>
+
+                    <div class="gambar">
+                    <img src="./Images/Query/query-3.png" alt="Query 3">
+                    <p>11. Query Nomor 3</p>
+                    </div>
+
+                    <div class="gambar">
+                    <img src="./Images/Hasil/hasil-query3.png" alt="HQue 3">
+                    <p>12. Hasil Query Nomor 3</p>
+                    </div>
+
+                    <p class="text-par">Dari table diatas diketahui bahwa perbandingan nilai transaksi dari masing-masing kategori
+                        pada tahun 2021 dengan 2022. Kategori yang mengalami peningkatan yaitu terdapat 13 Kategori
+                        diantaranya yang paling besar dalam peningkatan transaksi yaitu terdapat pada kategori Mobiles & Tablets
+                        sebesar 547.844.858, sedangkan kategori yang mengalami penurunan terdapat 2 kategori diantaranya yatu Books dan Others,
+                        dan kategori yang mengalami penurunan transaksi yaitu Others dengan jumlah -18.723.870. Query ini
+                        menggunakan CTE dan di dalam CTE itu sendiri menggunakan JOIN untuk menggabungkan table order_detail dan sku_detail.
+                        Kemudian untuk GAP/jarak penjualan menggunakan round/pembulatan, dengan cara transaksi_tahun_2022 - transaksi_tahun_2021.
+                        diurutkan berdasarkan data dari besar ke paling rendah.
+                    </p>
+                </div>
+                <!-- No 4 -->
+                <div class="port-text">
+                    <p><b>Nomor 4</b></p>
+                    <p>Q: Tampilkan top 5 metode pembayaran yang paling populer digunakan selama 2022
+                    (berdasarkan total unique order). Gunakan is_valid = 1 untuk memfilter data transaksi.
+                    </p>
+                    <p>Source table: order_detail, payment_method</p>
+
+                    <div class="gambar">
+                    <img src="./Images/Query/query-4.png" alt="Query 4">
+                    <p>13. Query Nomor 3</p>
+                    </div>
+
+                    <div class="gambar">
+                    <img src="./Images/Hasil/hasil-query4.png" alt="HQue 4">
+                    <p>14. Hasil Query Nomor 3</p>
+                    </div>
+
+                    <p class="text-par">Dari table diatas diketahui bahwa terdapat 5 metode pembayaran yang populer untuk digunakan selama tahun 2022,
+                        dari ke-5 metode pembayaran tersebut COD adalah metode pembayaran yang paling sering di gunakan selama tahun 2022
+                        dengan jumlah 1.809 unik ordernya, sedangkan yang terendah terdapat pada metode pembayaran jazzwallet
+                        sebanyak 26 unik order. Query diatas menggunakan JOIN untuk menggabungkan table order_detail dengan payment_method,
+                        hasil query tersebut difilter menggunakan pengurutan data dari besar ke paling rendah, dengan limit 5 column, sesuai
+                        dengan request user.
+                    </p>
+                </div>
+
+                <!-- No 5 -->
+                <div class="port-text">
+                    <p><b>Nomor 5</b></p>
+                    <p>Q: Urutkan dari ke-5 produk ini berdasarkan nilai transaksinya.</p>
+                        <p>1. Samsung</p>
+                        <p>2. Apple</p>
+                        <p>3. Sony</p>
+                        <p>4. Huawei</p>
+                        <p>5. Lenovo</p>
+                    <p>Source table: order_detail, sku_detail</p>
+
+                    <div class="gambar">
+                    <img src="./Images/Query/query-5.png" alt="Query 5">
+                    <p>15. Query Nomor 3</p>
+                    </div>
+                    
+                    <div class="gambar">
+                    <img src="./Images/Hasil/hasil-query5.png" alt="HQue 5">
+                    <p>16. Hasil Query Nomor 3</p>
+                    </div>
+
+                    <p class="text-par">Dari table diatas diketahui bahwa dari ke-5 produk tersebut, berdasarkan nilai transaksinya
+                        yang paling tinggi adalah produk Samsung dengan total penjualan 588.764.148, sedangkan yang
+                        terendah terdapat pada produk Lenovo dengan total penjualan 62.379.800,4. Query diatas 
+                        menggunakan CTE, didalamnya terdapat case when untuk menyaring nama produk dari sku_name dan
+                        juga terdapat join untuk menggabungkan 2 table, yaitu table order_detail dan sku_detail. Di Group
+                        By berdasarkan nama_produk.
+                    </p>
+                </div>
+            </div>
+        </section>
+            <!-- Portfolio END -->
+            </div>
+        </header>
+         <!-- HEADER END-->
+             <!-- CopyRight -->
+        <footer>
+            <div class="footer-sql">
+                <P>&#169; 2024 - Created by Ridha Miftahul Falah | Portfolio's Website</P>
+            </div>
+        </footer>
+            <!-- CopyRight END -->
+
+        <script src="main.js"></script>
+    </body>
+</html>
